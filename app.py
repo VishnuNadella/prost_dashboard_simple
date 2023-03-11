@@ -42,6 +42,7 @@ st.header(remin_cnt_str)
 
 phone_no = st.text_input("Enter Phone number to search:")
 req_det = collection.find_one({"phone_no": phone_no})
+st.write(req_det)
 if req_det is not None:
     st.write(req_det)
 else:
