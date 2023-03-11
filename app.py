@@ -44,9 +44,9 @@ phone_no = st.text_input("Enter Phone number to search:")
 req_det = collection.find_one({"phone_no": phone_no})
 st.write(phone_no)
 st.write(req_det)
-if req_det is not None:
+if req_det is not None and phone_no != "":
     st.write(req_det)
-else:
+elif req_det is None and phone_no != "":
     st.error("No data has been found with this mobile number")
 
 
