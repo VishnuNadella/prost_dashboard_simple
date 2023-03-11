@@ -35,7 +35,7 @@ print(Attended_count, Remaining_count)
 st.title("PROST")
 
 atten_cnt_str = f"Attended Count:  {Attended_count}"
-remin_cnt_str = f"Attended Count:  {Remaining_count}"
+remin_cnt_str = f"Pending Count:  {Remaining_count}"
 st.header(atten_cnt_str)
 st.header(remin_cnt_str)
 
