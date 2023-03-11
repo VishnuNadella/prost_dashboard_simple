@@ -2,7 +2,9 @@ from pymongo import *
 import streamlit as st
 
 
+pwd = st.secrets["pwd"]
 
+connection_str = f"mongodb+srv://application:{pwd}@prostcluster.bs9tpgw.mongodb.net/?retryWrites=true&w=majority"
 
 cluster = MongoClient(connection_str)
 print(cluster.database_names())
